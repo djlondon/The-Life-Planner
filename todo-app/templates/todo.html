@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>To Do</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<h1>This is the todo page.</h1>
+
+<!-- <ul>
+    <li>Temporary todo A</li>
+    <li>Temporary todo B</li>
+</ul> -->
+
+<ul>
+    {% for todo_item in all_items %}
+        <li>{{ todo_item.content }}</li>
+        <form action="/deleteTodo/{{todo_item.id}}/" 
+              style="display: inline;"    
+              method="post">{% csrf_token %}
+            <input type="submit" value="Delete"/>
+        </form>
+    {% endfor %}
+</ul>
+
+<form action="/addTodo/" method="post">{% csrf_token %}
+    <input type="text" name="content"/>
+    <input type="submit" value="Add"/>
+</form>
+</body>
+</html>
