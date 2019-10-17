@@ -10,6 +10,20 @@ The Life Planner lets you plan your projects with flexibility and ease. By allow
 
 For a long time I've been trying to integrate my project plans and the todo list tasks associated with them. The problem is that no product exists that actually allows for this. The Life Planner puts your tasks right where they belong, with your projects rather than just in a random list.
 
+## Coming 1st Nov
+
+The initial release is planned for Friday 1st November. It will have all the basic functionality, but may not be very pretty.
+
+This will include (at minimum):
+
+* Project details page
+
+* Task list page
+
+* Project index page
+
+  Hopefully, the sidebar will replace the projects index page.
+
 ## Coming soon
 
 * Truly customisable recurring tasks — e.g. every third Monday of the month, or 2 days from now then every day hence
