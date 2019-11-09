@@ -1,5 +1,6 @@
 # macOS
 *.DS_Store
+*.webloc
 
 #VS Code
 *.vscode
